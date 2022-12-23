@@ -1,11 +1,13 @@
 <?php 
 
+require_once("routes.php");
+
 function openDB() {
     
-    $host = "localhost";
-    $user = "";
-    $pass = "";
-    $db = "";
+    $host = HOST;
+    $user = USER;
+    $pass = PASS;
+    $db = DB;
     
     $cn = mysqli_connect($host, $user, $pass, $db) or 
         // die("Connect failed: %s". $cn);
